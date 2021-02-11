@@ -1,0 +1,31 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.DialogPane?>
+<?import java.lang.String?>
+<?import javafx.scene.control.DialogPane?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+
+<DialogPane fx:controller="sample.DController"
+            xmlns:fx="http://javafx.com/fxml">
+    <headerText>
+         PUT INSTRUCTION HERE
+    </headerText>
+    <content>
+    <GridPane vgap="10" hgap="10">
+        <Label text="FirstName :" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="firstname" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Label text="LastName :" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="lastname" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Label text="Phone Number:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="phonenumber" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Label text="notes:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextArea fx:id="notes" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    </GridPane>
+    </content>
+
+
+</DialogPane>
