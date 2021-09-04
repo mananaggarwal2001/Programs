@@ -1,0 +1,6 @@
+String = input()
+print (any(c.isalnum() for c in String))
+print (any(c.isalpha() for c in String))
+print (any(c.isdigit() for c in String))
+print (any(c.islower() for c in String))
+print (any(c.isupper() for c in String))
