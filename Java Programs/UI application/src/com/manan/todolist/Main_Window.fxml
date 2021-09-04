@@ -1,0 +1,63 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="mainborderpane" fx:controller="com.manan.todolist.Controller"
+            xmlns:fx="http://javafx.com/fxml" >
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="New" onAction="#showNewItemDilogue"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem text="Exit" onAction="#handleExit"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem text="Modify"/>
+                    </items>
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                    <HBox>
+                        <Button onAction="#showNewItemDilogue">
+                            <tooltip>
+                                <Tooltip text="Add a new Todo item"/>
+                            </tooltip>
+                        </Button>
+                    </HBox>
+                <ToggleButton fx:id="showTodaysItem" text="Today's item" onAction="#handleFilterButton">
+                    <tooltip>
+                        <Tooltip text="Button down : Show today's item only. Button Up: Show all items "/>
+                    </tooltip>
+                </ToggleButton>
+            </ToolBar>
+        </VBox>
+
+    </top>
+    <left>
+        <ListView fx:id="Todolistview" onMouseClicked="#clicklistView" onKeyPressed="#handlekeypress">
+
+        </ListView>
+    </left>
+    <center>
+        <VBox>
+            <TextArea fx:id="fulldescription" VBox.vgrow="ALWAYS" wrapText="true"/>
+            <HBox style="-fx-background-color:white;">
+                <Label text="Due : " style="-fx-background-color:white;">
+                    <font>
+                        <Font name="Times New Roman Bold" size="20"/>
+                    </font>
+                </Label>
+                <Label fx:id="deadlineLabel" style="-fx-background-color:white;">
+                    <font>
+                        <Font name ="Times New Roman Bold" size="20"/>
+                    </font>
+                </Label>
+
+            </HBox>
+        </VBox>
+    </center>
+
+
+</BorderPane>

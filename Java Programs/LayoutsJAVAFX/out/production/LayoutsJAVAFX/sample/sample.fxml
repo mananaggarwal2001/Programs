@@ -1,0 +1,58 @@
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Label?>
+<StackPane fx:controller="sample.Controller"
+           xmlns:fx="http://javafx.com/fxml">
+            <Button text="Button one" style="-fx-Background-color:red"/>
+    <Label text="Label one" style="-fx-Background-color:green"/>
+
+</StackPane>
+
+
+<!--<?import javafx.geometry.Insets?>-->
+<!--<?import javafx.scene.layout.GridPane?>-->
+
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.layout.ColumnConstraints?>-->
+<!--<?import javafx.scene.layout.HBox?>-->
+<!--<?import javafx.scene.layout.BorderPane?>-->
+<!--<BorderPane-->
+<!--    fx:controller="sample.Controller"-->
+<!--    xmlns:fx="http://javafx.com/fxml">-->
+<!--    <top>-->
+<!--        <Label text="This is my first window work" alignment="CENTER"-->
+<!--        style="-fx-border-color:blue; -fx-border-width:3; -fx-border-style: dashed;"-->
+<!--        BorderPane.alignment="CENTER"/>-->
+<!--    </top>-->
+<!--    <left>-->
+<!--        <Label text="This label is in the left"-->
+<!--               style="-fx-border-color:yellow; -fx-border-width:3; -fx-border-style: dashed;"-->
+<!--               BorderPane.alignment="CENTER"/>-->
+<!--    </left>-->
+<!--    <right>-->
+<!--        <Label text="This label is in the right"-->
+<!--               style="-fx-border-color:brown; -fx-border-width:3; -fx-border-style: dashed;"-->
+<!--               BorderPane.alignment="CENTER"/>-->
+
+<!--    </right>-->
+<!--    <center>-->
+<!--        <Label text="This label is in the center"-->
+<!--               style="-fx-border-color:black; -fx-border-width:3; -fx-border-style: dashed;"-->
+<!--               BorderPane.alignment="CENTER"/>-->
+<!--    </center>-->
+<!--    <bottom>-->
+<!--        <HBox-->
+<!--                style="-fx-border-color:red; -fx-border-width: 3;  -fx-border-style: dashed;"-->
+<!--                spacing="10" alignment="CENTER">-->
+<!--            <Button text="Okay" prefWidth="90"/>-->
+<!--            <Button text="Cancel" prefWidth="90"/>-->
+<!--            <Button text="Help" prefWidth="90"/>-->
+<!--        </HBox>-->
+
+<!--    </bottom>-->
+
+<!--</BorderPane>-->
