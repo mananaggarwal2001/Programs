@@ -24,7 +24,6 @@ int main()
 {
     Number a(45),z2;
     a.display();
-
     Number z1(a); // copy constructor invoked.
     z1.display();
     z2=z1; // copy construction will not invoked as the object was already made.
