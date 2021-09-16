@@ -53,12 +53,12 @@ void scintificCalculator::squareroot_of_two_numbers()
     cout << "The square root of the Second Numbers: " << sqrt(b)<<endl;
 }
 
-class result : public scintificCalculator
+class Hybridcalculator : public scintificCalculator
 {
 public:
     void displayresult();
 };
-void result :: displayresult()
+void Hybridcalculator :: displayresult()
 {
     cout<<endl;
     cout<<"The sum of Two Numbers is: "<<add()<<endl;
@@ -72,7 +72,7 @@ void result :: displayresult()
 }
 int main()
 {
-    result r1;
+    Hybridcalculator r1;
     float a,b;
     cout<<"Enter the Two Numbers: "<<endl;
     cin>>a>>b;
