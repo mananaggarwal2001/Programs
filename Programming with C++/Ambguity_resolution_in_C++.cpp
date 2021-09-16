@@ -62,6 +62,6 @@ int main()
     // Der manan;
     // hello.say();
     // Der's Class method will automatically override the B's class method.
-//     manan.say();
-//     return 0;
+    // manan.say();
+    // return 0;
 }
