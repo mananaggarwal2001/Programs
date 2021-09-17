@@ -21,13 +21,11 @@ int main()
     *(arr)=10;
     *(arr+1)=20;
     *(arr+2)=30;
-    
+
     // delete arr; // this will delete the space allocated in the memory.
     cout<<"The value at arr[0] is : "<<arr[0]<<endl;
     cout<<"The value at arr[1] is : "<<arr[1]<<endl;
     cout<<"The value at arr[2] is : "<<arr[2]<<endl;
-
-    // delete operator
 
 
     return 0;
