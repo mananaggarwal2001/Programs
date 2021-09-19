@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 template <class t1, class t2> // class templates with multiple parameters.
 class myClass
 {
