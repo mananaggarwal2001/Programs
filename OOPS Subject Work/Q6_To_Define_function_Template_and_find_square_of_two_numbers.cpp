@@ -9,7 +9,7 @@ void square_of_number(T1 Number1, T2 Number2)
     square_number2 = pow(Number2, 2);
 
     cout << "The square of the first number is :- " << square_number1 << endl;
-    cout << "The square of the second number is :-" << square_number2 << endl;
+    cout << "The square of the second number is :- " << square_number2 << endl;
 }
 
 int main()
