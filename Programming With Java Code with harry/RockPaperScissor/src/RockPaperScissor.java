@@ -21,13 +21,25 @@ public class RockPaperScissor {
                 System.out.print("Enter your choice:- ");
                 int mychoice = scanner.nextInt();
                 int computerChoice = random.nextInt(3);
-                System.out.println("My choice is :- " + mychoice);
-                System.out.println("computer Choice is :- " + computerChoice);
+                if (mychoice == 0) {
+                    System.out.println(user + " Choice is :- Rock");
+                } else if (mychoice == 1) {
+                    System.out.println(user + " Choice is :- Paper");
+                } else if (mychoice == 2) {
+                    System.out.println(user + " Choice is :- Scissor");
+                }
+                if (computerChoice == 0) {
+                    System.out.println("Computer Choice is :- Rock");
+                } else if (computerChoice == 1) {
+                    System.out.println("Computer Choice is :- Paper");
+                } else {
+                    System.out.println("Computer Choice is :- Scissor");
+                }
 
                 if ((mychoice == 0 && computerChoice == 2) || (mychoice == 1 && computerChoice == 0) || (mychoice == 2 && computerChoice == 1)) {
                     System.out.println("You Win !!!!!!");
                     myScore++;
-                } else if (mychoice == 0 && computerChoice == 0 || mychoice == 1 && computerChoice == 1 || mychoice == 2 && computerChoice == 2) {
+                } else if (mychoice == computerChoice) {
                     System.out.println("Draw !!!!!!");
                     count--;
                     continue;
