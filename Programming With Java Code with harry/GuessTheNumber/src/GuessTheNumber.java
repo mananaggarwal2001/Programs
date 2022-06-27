@@ -22,6 +22,7 @@ public class GuessTheNumber {
 
     public void isCorrectNUmber() {
         while (true) {
+            System.out.print("Enter your Number:- ");
             int guessedNumber = scanner.nextInt();
             if (computerNumberChoice > guessedNumber) {
                 System.out.println("The Number is Bigger than the guessed Number");
