@@ -1,7 +1,15 @@
+package com.company;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
 class CannotDivideBy0Exception extends Exception{
+    /**
+     * @author Manan Aggarwal
+     * @version 0.0.1
+     * @since 2022
+     * @see java.lang.Throwable
+     * */
     @Override
     public String toString() {
         return "The Divisor number which you have supplied is not applicable for doing the division Operation Please try again!!!!!!!!!!";
