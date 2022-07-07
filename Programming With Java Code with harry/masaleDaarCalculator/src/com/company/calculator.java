@@ -3,13 +3,13 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
+
 class CannotDivideBy0Exception extends Exception{
+
     /**
-     * @author Manan Aggarwal
-     * @version 0.0.1
-     * @since 2022
-     * @see java.lang.Throwable
-     * */
+     * This is the cannot Divide By Exception Error And this is Self Made Exception
+     * @return nothing.
+     */
     @Override
     public String toString() {
         return "The Divisor number which you have supplied is not applicable for doing the division Operation Please try again!!!!!!!!!!";
@@ -21,6 +21,9 @@ class CannotDivideBy0Exception extends Exception{
     }
 }
 class MaxInputException extends Exception{
+/**
+ * This is the Exception Class Etc.
+ * */
     @Override
     public String toString() {
         return "Number not allowed greater than 100000 please Try again !!!!!!!!!!!!!!";
@@ -42,11 +45,24 @@ class MaxMultiplierReachedException extends Exception{
         return  "Input greater than 7000 is not allowed For the multiplication";
     }
 }
-
+/**
+ * This is the special calculator which is used for calculating the certain things.
+ * @author Manan Aggarwal
+ * @since 1991
+ * Rocky Bhai
+ */
 
 
 public class calculator {
 public static Scanner sc = new Scanner(System.in);
+
+    /**
+     * This is the Addition class Which is used For Performing the addition Task etc.
+     * And From my source File you can used this Special calculator for performing the certain task.
+     * This is the method and this is the most beautiful method used by the all the users for performing the addition Program etc.
+     * @deprecated Sadly we can say that is the depricated method for performing the addition and please wait until the modified method will come and use the custom made method.
+     * @throws MaxInputException This method throws the MaxInputException Error when the user is suppling the value which is greater than the value of the 100000. It will thrown this exception.
+     */
     static void Addition() throws MaxInputException{
         int number1,number2;
         try{
@@ -83,6 +99,10 @@ public static Scanner sc = new Scanner(System.in);
         }
     }
 
+    /**
+     *
+     * @throws MaxMultiplierReachedException
+     */
     static void Multiplication() throws MaxMultiplierReachedException{
         int number1,number2;
         try{
@@ -119,6 +139,13 @@ public static Scanner sc = new Scanner(System.in);
             System.out.println("Invalid input is supplied Please try again !!!!!!!!!!!!!!!");
         }
     }
+
+    /**
+     * This is the Main Static method which uses the switch as the Purpose for executing the calculator which takes the two values and then return the result of the values which is either error or the sum of the values.
+     * @param args This is the argument Class
+     * @deprecated This addition method is depricated please wait for the other method to come for replacing this depricated method and used the self made depricated method etc.
+     *
+     */
     public static void main(String[] args) {
         int choice;
         do {
